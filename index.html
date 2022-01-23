@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- start header -->
+
+<header class="pb-5">
+<!-- navbar -->
+ <div class="side-bar">
+  <div class="left-sidebar text-white">
+   <div class="sidebar-container">
+     <ul id="links" class="list-unstyled">
+       <li><a href="#" id="nowPlaying">Now PLaying</a></li>
+       <li><a href="#" id="pop">Popular</a></li>
+       <li><a href="#" id="topRated">Top Rated</a></li>
+       <li><a href="#" id="tranding">Trending</a></li>
+       <li><a href="#" id="upcoming">Up Coming</a></li>
+       <li><a href="#">Contact US</a></li>
+     </ul>
+     <div class="sidebar-footer">
+       <i class="fab fa-facebook-f pe-4"></i>
+       <i class="fab fa-twitter pe-4"></i>
+       <i class="fas fa-globe"></i>
+       <p class="lead mt-2">Copyright At Mohamed Ashraf</p>
+     </div>
+     </div>
+   </div>
+
+   <div class="right-sidebar">
+    <div class="sidebar-container">
+      <img src="images/logo.png" alt="">
+      <i id="openBtn" class="fa fa-align-justify"></i>
+      <i id="closeBtn" class="fas fa-times d-none"></i>
+      <div class="icons">
+        <i class="fas fa-globe"></i>
+        <i class="fas fa-share-alt"></i>
+      </div>
+    </div>
+  </div>
+ </div>
+  <!-- end sidebar-->
+      <div class="container pt-5">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="get-movies">
+                <input id="searchHome" class="form-control" type="text" placeholder="Get Movies By Words">
+              </div>
+            </div> 
+            <div class="col-md-6">
+              <div class="search">
+                <input id="searchAll" class="form-control" type="text" placeholder="Search">
+              </div>
+            </div> 
+          </div>
+          <div id="movieContainer" class="row mt-5">
+          </div> 
+      </div>
+  
+</header>
+<!-- end header -->
+<!-- start contact us -->
+<div class="contact-us text-white pt-5 pb-5">
+  
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <div class="contact-box mb-3">
+          <input type="text" name=""   class="mb-3 form-control border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+            id="userInput" placeholder="Your Name">
+          <span id="erorUser"></span>
+        </div>
+
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="contact-box">
+          <input type="text" name=""  onkeyup='ckeckBtn ()' class="mb-3 form-control border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+            id="phoneInput" placeholder="Your Phone">
+          <span id="erorPhone"></span>
+        </div>
+        
+
+      </div>
+      <div class="col-md-6">
+        <div class="contact-box">
+          <input type="password" name="" onkeyup='ckeckBtn ()' class="mb-3 form-control border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+            id="passInput" placeholder="Enter Password">
+          <span id="erorPass"></span>
+        </div>
+
+      </div>
+      <div class="col-md-6">
+        <div class="contact-box">
+          <input type="password" name=""  class="mb-3 form-control border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+          id="password1Input" placeholder="Re-enter Password">
+          <span id="erorPass"></span>
+        </div>
+
+      </div>
+      <div class="col-md-6 mb-3">
+        <div class="contact-box">
+          <input type="text" name=""   class="mb-3 form-control border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+          id="emailInput" placeholder="Email">
+          <span id="erorEmail"></span>
+        </div>
+
+      </div>
+     
+      <div class="col-md-6 mb-3">
+        <div class="contact-box">
+          <input type="text" name=""   class="mb-3 form-control border-3 border-end-0 border-start-0 border-top-0 text-center  bg-transparent"
+          id="ageInput" placeholder="Age">
+          <span id="erorAge"></span>
+        </div>
+
+      </div>
+     
+      
+      <button id="submit" disabled='disabled '  class="btn btn-outline-danger mt-5">Submit</button>
+    </div>
+  </div>
+</div>
+<!-- end contact us  -->
+<!-- script files -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<!-- end script files -->
+</body>
+</html>
