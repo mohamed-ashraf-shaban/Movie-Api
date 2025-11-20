@@ -81,7 +81,10 @@ header .side-bar .left-sidebar .sidebar-container img {
 }
 #closeBtn {
   cursor: pointer;
-  font-size: 26px;
+    font-size: 30px;
+    top: 4px;
+    right: -30px;
+    background-color: transparent;
 }
 header .side-bar .left-sidebar .sidebar-container2 .fa {
   font-size: 26px;
@@ -194,3 +197,11 @@ header .form-control:focus {
 }
 
 /* end */
+/* Add media query to hide sidebar on mobile screens */
+@media (max-width: 768px) {
+  .side-bar {
+    display: none;
+  }
+}
+
+
